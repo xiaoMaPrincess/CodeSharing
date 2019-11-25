@@ -14,7 +14,9 @@ namespace Core3
         [HttpGet("/hello/{name}")]
         public IActionResult SayHello(string name)
         {
-            ViewBag.Name = name;
+            Random r1 = new Random();
+            int a1 = r1.Next(1, 100);
+            ViewBag.Name = a1.ToString();
             return View();
         }
     }
