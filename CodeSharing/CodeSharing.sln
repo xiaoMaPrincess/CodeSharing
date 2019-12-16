@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core3", "Core3\Core3.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ", "RabbitMQ\RabbitMQ.csproj", "{A5E371FA-71C7-46C7-A6EF-3DBD0CEE4B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQConsumer", "RabbitMQConsumer\RabbitMQConsumer.csproj", "{6362A076-44C9-4BA2-951B-CD63125389B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQConsumer", "RabbitMQConsumer\RabbitMQConsumer.csproj", "{6362A076-44C9-4BA2-951B-CD63125389B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQConsumer2", "RabbitMQConsumer2\RabbitMQConsumer2.csproj", "{3E58D318-FBF3-4911-8E99-16D61EA29BFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQConsumer2", "RabbitMQConsumer2\RabbitMQConsumer2.csproj", "{3E58D318-FBF3-4911-8E99-16D61EA29BFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQExchane", "RabbitMQExchane\RabbitMQExchane.csproj", "{DA272685-4017-44F3-AD46-3DC32CC49843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQExchange", "RabbitMQExchane\RabbitMQExchange.csproj", "{DA272685-4017-44F3-AD46-3DC32CC49843}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
