@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQConsumer2", "Rabbit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQExchange", "RabbitMQExchane\RabbitMQExchange.csproj", "{DA272685-4017-44F3-AD46-3DC32CC49843}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DI", "DI\DI.csproj", "{E209414C-1290-47BD-873A-6AC1B9C7078F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCoreMVCDemo", "Asp.NetCoreMVCDemo\Asp.NetCoreMVCDemo.csproj", "{01A5747C-84D1-483F-BA88-72CFA5E525DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{DA272685-4017-44F3-AD46-3DC32CC49843}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA272685-4017-44F3-AD46-3DC32CC49843}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA272685-4017-44F3-AD46-3DC32CC49843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E209414C-1290-47BD-873A-6AC1B9C7078F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E209414C-1290-47BD-873A-6AC1B9C7078F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E209414C-1290-47BD-873A-6AC1B9C7078F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E209414C-1290-47BD-873A-6AC1B9C7078F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

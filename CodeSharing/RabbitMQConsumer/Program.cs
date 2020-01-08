@@ -41,6 +41,7 @@ namespace RabbitMQConsumer
             channel.Dispose();
             connection.Close();
             Console.WriteLine("Hello World!");
+
         }
     }
 }
