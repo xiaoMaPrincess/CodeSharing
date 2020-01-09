@@ -8,16 +8,14 @@ namespace Asp.NetCoreMVCDemo.Models
     public class PersonRepository : IPersonRepository
     {
         private List<Person> people;
-        public PersonRepository()
+        private readonly MvcDbContext _context;
+        public PersonRepository(MvcDbContext context)
         {
-            if (people == null)
-            {
-                InitializeData();
-            }
+            _context = context;
         }
         public IEnumerable<Person> GetAllPeople()
         {
-            return people;
+            return _context.Person;
         }
 
         public Person GetPersonById(int id)

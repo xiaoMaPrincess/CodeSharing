@@ -8,16 +8,14 @@ namespace Asp.NetCoreMVCDemo.Models
     public class HobbyRepository : IHobbyRepository
     {
         private List<Hobby> _hobbies { get; set; }
-        public HobbyRepository()
+        private readonly MvcDbContext _context;
+        public HobbyRepository(MvcDbContext context)
         {
-            if (_hobbies == null)
-            {
-                InitializeData();
-            }
+            _context = context;
         }
         public IEnumerable<Hobby> GetAllHobbies()
         {
-            throw new NotImplementedException();
+            return _context.Hobby;
         }
         private void InitializeData()
         {
