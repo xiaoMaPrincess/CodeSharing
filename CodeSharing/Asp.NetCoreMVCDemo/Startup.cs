@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Asp.NetCoreMVCDemo
 {
@@ -25,6 +26,7 @@ namespace Asp.NetCoreMVCDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             // 注入efcore上下文
             services.AddDbContext<MvcDbContext>(x=>x.UseMySql(Configuration.GetConnectionString("MySqlDatabase")));
             services.AddControllersWithViews();
@@ -47,7 +49,8 @@ namespace Asp.NetCoreMVCDemo
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            // 用户认证
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();
