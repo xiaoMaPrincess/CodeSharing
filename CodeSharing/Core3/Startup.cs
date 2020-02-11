@@ -12,12 +12,17 @@ namespace Core3
     /// </summary>
     public class Startup
     {
+        public Startup()
+        {
+            Console.WriteLine("StartUp");
+        }
         /// <summary>
         /// 注册服务
         /// </summary>
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+            Console.WriteLine("StartUpConfigureServices");
             services.AddRouting().AddControllersWithViews();
         }
 
@@ -27,6 +32,7 @@ namespace Core3
         /// <param name="app"></param>
         public void Configure(IApplicationBuilder app)
         {
+            Console.WriteLine("StartUpConfigure");
             app.UseRouting().UseEndpoints(endpoints => endpoints.MapControllers());
         }
     }

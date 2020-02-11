@@ -11,14 +11,20 @@ namespace Core3
     {
         static void Main(string[] args)
         {
-            //Host.CreateDefaultBuilder()
-            //   .ConfigureWebHost(webHostBuilder => webHostBuilder
-            //       .UseKestrel()
-            //       .UseUrls("https://localhost:5001/")
-            //       .Configure(app => app.Run(
-            //            context => context.Response.WriteAsync("Hello World."))))
-            //   .Build()
-            //   .Run();
+            #region Core3.0 启动方式演示
+            // 自定义主机
+            Host.CreateDefaultBuilder()
+               .ConfigureWebHost(webHostBuilder => webHostBuilder
+                   .UseKestrel()
+                   .UseUrls("https://localhost:5001/")
+                   .ConfigureServices(x => Console.WriteLine("ConfigureWebHost"))
+                   .Configure(app => app.Run(
+                        context => context.Response.WriteAsync("Configure"))))
+               .ConfigureHostConfiguration(x=> { Console.WriteLine("ConfigureHostConfiguration"); })
+               .ConfigureAppConfiguration(x => { Console.WriteLine("ConfigureAppConfiguration"); })
+               .ConfigureServices(x=> { Console.WriteLine("ConfigureServices"); })
+               .Build()
+               .Run();
 
             //host.createdefaultbuilder()
             //  .configurewebhostdefaults(webhostbuilder => webhostbuilder
@@ -31,22 +37,23 @@ namespace Core3
             //  .build()
             //  .run();
 
-            Host.CreateDefaultBuilder()
-           .ConfigureWebHostDefaults(webHostBuilder => webHostBuilder.UseStartup<Startup>())
-           .Build()
-           .Run();
+            // Host.CreateDefaultBuilder()
+            //.ConfigureWebHostDefaults(webHostBuilder => webHostBuilder.UseStartup<Startup>())
+            //.Build()
+            //.Run();
+            #endregion
 
-
-   //         < Project Sdk = "Microsoft.NET.Sdk" >
- 
-   //< PropertyGroup >
- 
-   //  < OutputType > Exe </ OutputType >
- 
-   //  < TargetFramework > netcoreapp3.0 </ TargetFramework >
-    
-   //   </ PropertyGroup >
-   // </ Project >
+            //CreateHostBuilder(args).Build().Run();
         }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+      Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration(builder => { Console.WriteLine("ConfigureAppConfiguration"); })
+            .ConfigureServices(service => { Console.WriteLine("ConfigureServices"); })
+            .ConfigureHostConfiguration(builder => { Console.WriteLine("ConfigureHostConfiguration"); })
+          .ConfigureWebHostDefaults(webBuilder =>
+          {
+              Console.WriteLine("ConfigureWebHostDefaults");
+              webBuilder.UseStartup<Startup>();
+          });
     }
 }

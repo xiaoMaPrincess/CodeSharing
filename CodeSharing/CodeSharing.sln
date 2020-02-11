@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQExchange", "RabbitM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DI", "DI\DI.csproj", "{E209414C-1290-47BD-873A-6AC1B9C7078F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCoreMVCDemo", "Asp.NetCoreMVCDemo\Asp.NetCoreMVCDemo.csproj", "{01A5747C-84D1-483F-BA88-72CFA5E525DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.NetCoreMVCDemo", "Asp.NetCoreMVCDemo\Asp.NetCoreMVCDemo.csproj", "{01A5747C-84D1-483F-BA88-72CFA5E525DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreDIDemo", "DotNetCoreDIDemo\DotNetCoreDIDemo.csproj", "{943FE28A-031E-4856-833E-FC1230F299AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreAutofacDemo", "DotNetCoreAutofacDemo\DotNetCoreAutofacDemo.csproj", "{3D677051-6FF3-4D91-AD20-01FFCCC65929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01A5747C-84D1-483F-BA88-72CFA5E525DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943FE28A-031E-4856-833E-FC1230F299AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943FE28A-031E-4856-833E-FC1230F299AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943FE28A-031E-4856-833E-FC1230F299AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943FE28A-031E-4856-833E-FC1230F299AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
