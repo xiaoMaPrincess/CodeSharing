@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.NetCoreMVCDemo", "Asp.N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreDIDemo", "DotNetCoreDIDemo\DotNetCoreDIDemo.csproj", "{943FE28A-031E-4856-833E-FC1230F299AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreAutofacDemo", "DotNetCoreAutofacDemo\DotNetCoreAutofacDemo.csproj", "{3D677051-6FF3-4D91-AD20-01FFCCC65929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAutofacDemo", "DotNetCoreAutofacDemo\DotNetCoreAutofacDemo.csproj", "{3D677051-6FF3-4D91-AD20-01FFCCC65929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreConfigurationDemo", "DotNetCoreConfigurationDemo\DotNetCoreConfigurationDemo.csproj", "{D4DEB16D-A33C-4024-B4F9-0756C27A1FE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D677051-6FF3-4D91-AD20-01FFCCC65929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DEB16D-A33C-4024-B4F9-0756C27A1FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DEB16D-A33C-4024-B4F9-0756C27A1FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DEB16D-A33C-4024-B4F9-0756C27A1FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DEB16D-A33C-4024-B4F9-0756C27A1FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
