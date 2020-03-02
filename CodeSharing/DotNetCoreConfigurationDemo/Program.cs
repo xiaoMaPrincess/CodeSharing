@@ -73,24 +73,41 @@ namespace DotNetCoreConfigurationDemo
             //Console.WriteLine($"key2:{configRoot["key2"]}");
 
             #region 监听文件发生变化
-            IChangeToken token = configRoot.GetReloadToken();
+            //IChangeToken token = configRoot.GetReloadToken();
             // 监听文件发生变化 v1
             //token.RegisterChangeCallback(Ads,configRoot);
 
             // v2
-            ChangeToken.OnChange(() => configRoot.GetReloadToken(), () =>
-            {
-                Console.WriteLine($"key1:{configRoot["key1"]}");
-                Console.WriteLine($"key2:{configRoot["key2"]}");
-            });
+            //ChangeToken.OnChange(() => configRoot.GetReloadToken(), () =>
+            // {
+            //Console.WriteLine($"key1:{configRoot["key1"]}");
+            //Console.WriteLine($"key2:{configRoot["key2"]}");
+            //});
             #endregion
 
             #endregion
+
+            // 强类型绑定,数据发现改变需要重新绑定
+            Config config = new Config();
+            configRoot.Bind(config);
+            Console.WriteLine($"key1:{config.Key1}");
+            Console.WriteLine($"key3:{config.Key3}");
             Console.ReadKey();
         }
         static void Ads(object obj)
         {
             Console.WriteLine("文件发生改变");
         }
+    }
+
+    /// <summary>
+    /// 强类型配置类
+    /// </summary>
+    class Config
+    {
+        public string Key1 { get; set; }
+        public string Key2 { get; set; }
+        public int Key3 { get; set; }
+        public bool Key4 { get; set; }
     }
 }
