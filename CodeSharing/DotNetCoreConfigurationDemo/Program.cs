@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
 
@@ -65,13 +66,31 @@ namespace DotNetCoreConfigurationDemo
 
             #region 文件配置提供程序
             var builder = new ConfigurationBuilder();
-            // 指定加载的json文件，并指定文件是否可选，是否监听文件的变化
+            // 指定加载的json文件，并指定文件是否可选，是否监听文件的变化。 后添加的文件会覆盖之前的
             builder.AddJsonFile("appsettings.json", optional: false,reloadOnChange:true);
             var configRoot = builder.Build();
-            Console.WriteLine($"key1:{configRoot["key1"]}");
-            Console.WriteLine($"key2:{configRoot["key2"]}");
+            //Console.WriteLine($"key1:{configRoot["key1"]}");
+            //Console.WriteLine($"key2:{configRoot["key2"]}");
+
+            #region 监听文件发生变化
+            IChangeToken token = configRoot.GetReloadToken();
+            // 监听文件发生变化 v1
+            //token.RegisterChangeCallback(Ads,configRoot);
+
+            // v2
+            ChangeToken.OnChange(() => configRoot.GetReloadToken(), () =>
+            {
+                Console.WriteLine($"key1:{configRoot["key1"]}");
+                Console.WriteLine($"key2:{configRoot["key2"]}");
+            });
+            #endregion
+
             #endregion
             Console.ReadKey();
+        }
+        static void Ads(object obj)
+        {
+            Console.WriteLine("文件发生改变");
         }
     }
 }
