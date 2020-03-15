@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsDemo", "OptionsDemo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreLoggingDemo", "DotNetCoreLoggingDemo\DotNetCoreLoggingDemo.csproj", "{E2BF4631-9C42-40B3-9421-20D02621C558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreLoggingSerilog", "DotNetCoreLoggingSerilog\DotNetCoreLoggingSerilog.csproj", "{C024DE2A-C617-46B1-9F18-EA9C6F457E6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreLoggingSerilog", "DotNetCoreLoggingSerilog\DotNetCoreLoggingSerilog.csproj", "{C024DE2A-C617-46B1-9F18-EA9C6F457E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRDemo", "SignalRDemo\SignalRDemo.csproj", "{0F399C68-001F-403C-B94C-1AC8AC209640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{C024DE2A-C617-46B1-9F18-EA9C6F457E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C024DE2A-C617-46B1-9F18-EA9C6F457E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C024DE2A-C617-46B1-9F18-EA9C6F457E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F399C68-001F-403C-B94C-1AC8AC209640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F399C68-001F-403C-B94C-1AC8AC209640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F399C68-001F-403C-B94C-1AC8AC209640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F399C68-001F-403C-B94C-1AC8AC209640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
