@@ -43,8 +43,9 @@ namespace DotNetCoreExceptionDemo
             //{
             //    app.UseDeveloperExceptionPage();
             //}
-            app.UseExceptionHandler("/error"); // 异常处理页
-
+            //app.UseExceptionHandler("/error"); // 异常处理页
+            //app.UseExceptionHandler("/Error/{0}");
+            app.UseStatusCodePagesWithReExecute("/Error/Index/{0}");
             // 异常处理匿名方法
             //app.UseExceptionHandler(errApp =>
             //{

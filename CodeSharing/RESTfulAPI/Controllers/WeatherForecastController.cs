@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DotNetCoreExceptionDemo.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace DotNetCoreExceptionDemo.Controllers
+namespace RESTfulAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -25,11 +24,8 @@ namespace DotNetCoreExceptionDemo.Controllers
         }
 
         [HttpGet]
-        //[MyExceptionFilter]
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new Exception("error");
-            //throw new MyServerException("服务器出错了", 65);
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

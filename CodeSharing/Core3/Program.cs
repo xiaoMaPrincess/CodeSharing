@@ -20,9 +20,9 @@ namespace Core3
                    .ConfigureServices(x => Console.WriteLine("ConfigureWebHost"))
                    .Configure(app => app.Run(
                         context => context.Response.WriteAsync("Configure"))))
-               .ConfigureHostConfiguration(x=> { Console.WriteLine("ConfigureHostConfiguration"); })
+               .ConfigureHostConfiguration(x => { Console.WriteLine("ConfigureHostConfiguration"); })
                .ConfigureAppConfiguration(x => { Console.WriteLine("ConfigureAppConfiguration"); })
-               .ConfigureServices(x=> { Console.WriteLine("ConfigureServices"); })
+               .ConfigureServices(x => { Console.WriteLine("ConfigureServices"); })
                .Build()
                .Run();
 
@@ -48,7 +48,7 @@ namespace Core3
         public static IHostBuilder CreateHostBuilder(string[] args) =>
       Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration(builder => { Console.WriteLine("ConfigureAppConfiguration"); })
-            .ConfigureServices(service => { Console.WriteLine("ConfigureServices"); })
+            .ConfigureServices(service => service.AddRouting())
             .ConfigureHostConfiguration(builder => { Console.WriteLine("ConfigureHostConfiguration"); })
           .ConfigureWebHostDefaults(webBuilder =>
           {

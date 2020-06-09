@@ -10,14 +10,15 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DotNetCoreExceptionDemo.Controllers
 {
-    [Route("/error")]
+    //[Route("/error")]
     public class ErrorController : Controller
     {
         /// <summary>
         /// 异常处理页
         /// </summary>
         /// <returns></returns>
-        public IActionResult Index()
+        //[Route("{id}")]
+        public IActionResult Index(int id)
         {
             var exception= HttpContext.Features.Get<IExceptionHandlerPathFeature>();
             var ex = exception?.Error;

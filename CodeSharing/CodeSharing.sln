@@ -31,7 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreLoggingSerilog", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo", "SignalRDemo\SignalRDemo.csproj", "{0F399C68-001F-403C-B94C-1AC8AC209640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreExceptionDemo", "DotNetCoreExceptionDemo\DotNetCoreExceptionDemo.csproj", "{7CD5381B-BF82-4EAF-B34D-08151201D6E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreExceptionDemo", "DotNetCoreExceptionDemo\DotNetCoreExceptionDemo.csproj", "{7CD5381B-BF82-4EAF-B34D-08151201D6E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RESTfulAPI", "RESTfulAPI\RESTfulAPI.csproj", "{434CD872-84BA-4AD7-BBE4-8F0481034583}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DD216642-92B7-4F4E-BF50-F9B2425988C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{B5771FA3-DB85-4072-8D8A-267CCF383FA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +105,18 @@ Global
 		{7CD5381B-BF82-4EAF-B34D-08151201D6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD5381B-BF82-4EAF-B34D-08151201D6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD5381B-BF82-4EAF-B34D-08151201D6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434CD872-84BA-4AD7-BBE4-8F0481034583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434CD872-84BA-4AD7-BBE4-8F0481034583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434CD872-84BA-4AD7-BBE4-8F0481034583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434CD872-84BA-4AD7-BBE4-8F0481034583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD216642-92B7-4F4E-BF50-F9B2425988C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD216642-92B7-4F4E-BF50-F9B2425988C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD216642-92B7-4F4E-BF50-F9B2425988C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD216642-92B7-4F4E-BF50-F9B2425988C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5771FA3-DB85-4072-8D8A-267CCF383FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5771FA3-DB85-4072-8D8A-267CCF383FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5771FA3-DB85-4072-8D8A-267CCF383FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5771FA3-DB85-4072-8D8A-267CCF383FA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
